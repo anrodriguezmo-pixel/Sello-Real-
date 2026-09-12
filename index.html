@@ -118,12 +118,8 @@
     display:flex; align-items:center; justify-content:space-between;
     padding-block:14px;
   }
-  .brand{display:flex; align-items:center; gap:.75rem;}
-  .logo-mark{
-    width:48px; height:48px; border-radius:50%;
-    object-fit:cover;
-    border:1.5px solid var(--gold-bright);
-  }
+  .brand{display:flex; align-items:center; gap:.7rem;}
+  .logo-mark{width:42px; height:42px; flex:none;}
   .wordmark{
     display:flex; flex-direction:column; gap:.15rem; line-height:1;
   }
@@ -390,7 +386,15 @@
 <header class="nav">
   <div class="wrap">
     <span class="brand">
-      <img class="logo-mark" src="images/logo.png" alt="Sello Real Joyería" onerror="this.remove()">
+      <svg class="logo-mark" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M18 44 L18 34 L30 20 L45 34 L60 8 L75 34 L90 20 L102 34 L102 44 Z" fill="var(--gold-bright)"/>
+        <circle cx="30" cy="20" r="5" fill="var(--gold-bright)"/>
+        <circle cx="60" cy="8" r="6" fill="var(--gold-bright)"/>
+        <circle cx="90" cy="20" r="5" fill="var(--gold-bright)"/>
+        <rect x="18" y="44" width="84" height="8" fill="var(--gold-bright)"/>
+        <path d="M48 48 L72 48 L100 60 L60 100 L20 60 Z" fill="none" stroke="var(--gold-bright)" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M48 48 L60 100 M72 48 L60 100 M20 60 L100 60" fill="none" stroke="var(--gold-bright)" stroke-width="3"/>
+      </svg>
       <span class="wordmark"><span class="brand-name">Sello Real</span><span class="brand-sub">Joyería</span></span>
     </span>
     <a class="nav-cta" href="https://wa.me/573153652923?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20joyas%20en%20oro%20laminado%2018k" target="_blank" rel="noopener">
